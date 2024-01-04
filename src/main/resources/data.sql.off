@@ -1,0 +1,10 @@
+CREATE TABLE task (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255),
+    description VARCHAR(255),
+    due_date DATE,
+    completed BOOLEAN
+);
+INSERT INTO task (id, title, description, due_date, completed) VALUES (1, 'Task 1', 'Description for Task 1', '2023-01-01', false);
+INSERT INTO task (id, title, description, due_date, completed) VALUES (2, 'Task 2', 'Description for Task 2', '2023-02-01', true);
+-- Add more INSERT statements as needed
